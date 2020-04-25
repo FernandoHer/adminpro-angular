@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subscriber } from 'rxjs';
+import { retry, map, filter} from 'rxjs/operators';
 
 declare function init_plugins();
 
@@ -9,10 +11,13 @@ declare function init_plugins();
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
     init_plugins();
   }
+
 
 }
