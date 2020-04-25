@@ -4,6 +4,12 @@ import { NgModule } from '@angular/core';
 // Rutas
 import { APP_ROUTES } from './app.routes';
 
+// Temporal
+import { FormsModule } from '@angular/forms';
+
+// Servicios
+import { ServiceModule } from './services/service.module';
+
 // Módulos
 import { PagesModule } from './pages/pages.module';
 
@@ -12,7 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -26,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
